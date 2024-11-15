@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import { FaArrowRight } from "react-icons/fa";
 import PortfolioList from "../../components/PortfolioList";
 
 const Portfolio: React.FC = () => {
