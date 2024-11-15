@@ -21,8 +21,8 @@ const ThemeSwitcher: React.FC = () => {
 
   return (
     <div onClick={toggleTheme} className="cursor-pointer">
-      {theme !== "dark" ? (
-        <FaMoon size={25} className="text-black" />
+      {theme !== "light" ? (
+        <FaMoon size={25} className="text-gray-400" />
       ) : (
         <FaSun size={25} className="text-yellow-400" />
       )}
