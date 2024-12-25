@@ -2,20 +2,23 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import PortfolioList from "../../components/PortfolioList";
 
+import itHelpdesk from "../../assets/image/it-helpdesk.jpg";
+
 const Portfolio: React.FC = () => {
   const data = [
     {
-      title: "Accreditation Quality Information System application",
+      title: "IT-Helpdesk Application",
       description: `
-        The Quality Information System of the Health Office of Tasikmalaya Regency features several developed functions:
+        The IT-Helpdesk application streamlines support and issue resolution processes through several key functions:
         <ul>
-          <li><strong>Clinic management</strong></li>
-          <li><strong>Service quality monitoring</strong></li>
-          <li><strong>Employee management</strong></li>
+          <li><strong>Ticket management</strong></li>
+          <li><strong>Incident tracking and resolution</strong></li>
+          <li><strong>Knowledge base for common issues</strong></li>
+          <li><strong>Reporting and analytics</strong></li>
         </ul>
-        <br><strong>Tech stack:</strong> Web Development · PHP · Laravel · JavaScript · Bootstrap · MySQL
+        <br><strong>Tech stack:</strong> Web Development · Laravel · Javascript · Bootstrap · MySql
       `,
-      image: "https://dummyimage.com/600x400/000/fff",
+      image: itHelpdesk,
       link: "",
     },
     {
