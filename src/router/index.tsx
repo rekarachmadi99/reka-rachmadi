@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
-import About from "../pages/About";
 import Contact from "../pages/Contact";
+import Certification from "../pages/Certification";
 
 const Router: React.FC = () => {
   return (
@@ -11,8 +11,8 @@ const Router: React.FC = () => {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/portfolio" Component={Portfolio} />
-        <Route path="/about" Component={About} />
-        <Route path="/Contact" Component={Contact} />
+        <Route path="/certification" Component={Certification} />
+        <Route path="/contact" Component={Contact} />
       </Routes>
     </BrowserRouter>
   );

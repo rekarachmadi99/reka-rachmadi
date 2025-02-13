@@ -40,12 +40,12 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => {
       : item.description;
 
   return (
-    <div className="flex flex-col md:flex-row gap-2 m-4 p-4 shadow dark:shadow-gray-200 rounded">
+    <div className="flex flex-col md:flex-row gap-2 m-4 p-4 shadow dark:shadow-gray-200">
       <div className="md:w-4/6 w-full">
         <img
           src={item.image}
-          className="w-full object-cover"
-          alt="Sistem Informasi Apotik"
+          alt={item.title}
+          className="w-full object-cover transform hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
         />
       </div>
 
@@ -64,7 +64,7 @@ const ItemCard: React.FC<{ item: Item }> = ({ item }) => {
         {item.description.length > 250 && (
           <button
             onClick={toggleReadMore}
-            className="text-blue-600 dark:text-blue-400 font-serif underline"
+            className="text-blue-600 dark:text-blue-400 font-serif underline py-1"
           >
             {isExpanded ? "Show Less" : "Read More"}
           </button>

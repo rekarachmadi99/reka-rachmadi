@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher"; // Adjust the path as needed
-import { FaBars } from "react-icons/fa";
+import {
+  FaBars,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
@@ -53,10 +59,10 @@ const Navbar: React.FC = () => {
               Portfolio
             </div>
             <div
-              onClick={() => navigate("/about")}
+              onClick={() => navigate("/certification")}
               className="block font-serif text-5xl cursor-pointer"
             >
-              About
+              Certification
             </div>
             <div
               onClick={() => navigate("/contact")}
@@ -75,7 +81,7 @@ const Navbar: React.FC = () => {
             }
             className="font-serif cursor-pointer"
           >
-            Facebook
+            <FaFacebook size={24} />
           </div>
           <div
             onClick={() =>
@@ -83,13 +89,13 @@ const Navbar: React.FC = () => {
             }
             className="font-serif cursor-pointer"
           >
-            Instagram
+            <FaInstagram size={24} />
           </div>
           <div
             onClick={() => navigateMedsos("https://github.com/rekarachmadi99")}
             className="font-serif cursor-pointer"
           >
-            Github
+            <FaGithub size={24} />
           </div>
           <div
             onClick={() =>
@@ -99,11 +105,11 @@ const Navbar: React.FC = () => {
             }
             className="font-serif cursor-pointer"
           >
-            LinkedIn
+            <FaLinkedin size={24} />
           </div>
         </div>
         <div className="fixed flex space-x-3 bottom-5 right-5">
-          <span>&copy; 2024 Reka Rachmadi</span>
+          <span>&copy; 2024 Reka Rachmadi A</span>
         </div>
       </div>
     </nav>
